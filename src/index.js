@@ -1,4 +1,5 @@
-// import './styles/style.css';
+import './styles/style.css';
 
-const root = document.getElementById('root');
-console.log(root);
+const encryptResult = document.getElementById('encryptResult');
+const decryptResult = document.getElementById('decryptResult');
+console.log(encryptResult, decryptResult);

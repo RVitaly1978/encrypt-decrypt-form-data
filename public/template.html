@@ -12,8 +12,47 @@
 </head>
 
 <body>
-  <div id="root"></div>
-  <h1>Hello world!</h1>
+  <header class="container bg-primary bg-gradient text-white header">
+    <h1 class="display-6">Encrypt-decrypt data</h1>
+  </header>
+  <main>
+    <section class="container section_encrypt">
+      <form>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="uploadPublicKey">Upload a public-key</label>
+          <input type="file" class="form-control" id="uploadPublicKey">
+        </div>
+        <div class="mb-3">
+          <label for="input01" class="form-label">Input01</label>
+          <input type="text" class="form-control" id="input01">
+        </div>
+        <div class="mb-3">
+          <label for="input02" class="form-label">Input02</label>
+          <input type="text" class="form-control" id="input02">
+        </div>
+        <div class="mb-3">
+          <label for="input03" class="form-label">Input03</label>
+          <input type="text" class="form-control" id="input03">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div id="encryptResult" class="input-group mb-3 encrypt_result">
+          <p class="input-group-text">Result</p>
+        </div>
+      </form>
+    </section>
+    <section class="container section_decrypt">
+      <form>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="uploadPrivateKey">Upload a private-key</label>
+          <input type="file" class="form-control" id="uploadPrivateKey">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div id="decryptResult" class="input-group mb-3 decrypt_result">
+          <p class="input-group-text">Result</p>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>

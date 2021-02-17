@@ -1,0 +1,197 @@
+:root {
+  --maxWidth: 1440px;
+  --padding: 10px;
+  --borderRadius: 4px;
+  --border: 1px solid rgba(9, 32, 46, 0.9);
+  --boxShadow: 0px 0px 2px 1px rgba(9, 32, 46, 0.9);
+  --colorInput: #0c0c0c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+  font-family: 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #eeeeee;
+}
+
+@media (max-width: 460px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font: inherit;
+  color: inherit;
+}
+
+div, p {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  color: inherit;
+
+  user-select: none;
+  outline: none;
+}
+
+button {
+  margin: 0;
+  padding: var(--padding);
+
+  border: none;
+  border-radius: var(--borderRadius);
+  background-color:rgba(9, 32, 46, 0.3);
+
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:rgba(9, 32, 46, 0.5);
+}
+
+button:active {
+  background-color: rgba(9, 32, 46, 0.9);
+}
+
+button:disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  margin: 0;
+  padding: var(--padding);
+
+  border: var(--border);
+  border-radius: var(--borderRadius);
+
+  background-color: inherit;
+
+  font: inherit;
+  font-family: Courier, monospace;
+  font-size: calc(8px + 20%);
+
+  color: var(--colorInput);
+  outline: none;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1000px) {
+  textarea {
+    font-size: calc(12px + 20%);
+  }
+}
+
+@media (max-width: 640px) {
+  textarea {
+    font-size: calc(8px + 20%);
+  }
+}
+
+@media (max-width: 520px) {
+  textarea {
+    font-size: calc(7px + 20%);
+  }
+}
+
+@media (max-width: 460px) {
+  textarea {
+    font-size: calc(6px + 20%);
+  }
+}
+
+@media (max-width: 400px) {
+  textarea {
+    font-size: calc(5px + 20%);
+  }
+}
+
+textarea::selection {
+  background-color: rgba(9, 32, 46, 0.2);
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(9, 32, 46, 0.9);
+}
+
+textarea:not(:focus)::-webkit-scrollbar {
+  display: none;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 2px;
+}
+
+textarea:focus {
+  box-shadow: inset var(--boxShadow);
+}
+
+input[type='search'] {
+  margin: 0;
+  padding: var(--padding);
+
+  border: var(--border);
+  border-radius: var(--borderRadius);
+
+  background-color: inherit;
+
+  font: inherit;
+  font-family: Courier, monospace;
+  font-size: 1em;
+
+  color: var(--colorInput);
+  outline: none;
+}
+
+input[type='search']::selection {
+  background-color: rgba(9, 32, 46, 0.2);
+}
+
+input[type='search']:focus {
+  box-shadow: inset var(--boxShadow);
+}

@@ -17,7 +17,7 @@
   </header>
   <main>
     <section class="container section_encrypt">
-      <form>
+      <form id="formData">
         <div class="input-group mb-3">
           <label class="input-group-text" for="uploadPublicKey">Upload a public-key</label>
           <input type="file" class="form-control" id="uploadPublicKey">
@@ -35,21 +35,17 @@
           <input type="text" class="form-control" id="input03">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <div id="encryptResult" class="input-group mb-3 encrypt_result">
-          <p class="input-group-text">Result</p>
-        </div>
+        <div id="encryptResult" class="encrypt_result"></div>
       </form>
     </section>
     <section class="container section_decrypt">
-      <form>
+      <form id="formResult">
         <div class="input-group mb-3">
           <label class="input-group-text" for="uploadPrivateKey">Upload a private-key</label>
           <input type="file" class="form-control" id="uploadPrivateKey">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <div id="decryptResult" class="input-group mb-3 decrypt_result">
-          <p class="input-group-text">Result</p>
-        </div>
+        <div id="decryptResult" class="decrypt_result"></div>
       </form>
     </section>
   </main>

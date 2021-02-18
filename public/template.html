@@ -34,8 +34,9 @@
           <label for="input03" class="form-label">Input03</label>
           <input type="text" class="form-control" id="input03">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <div id="encryptResult" class="encrypt_result"></div>
+        <button id="encryptSubmit" type="submit" class="btn btn-primary" disabled>Submit</button>
+        <button id="resetData" type="button" class="btn btn-secondary">Reset data</button>
+        <div id="encryptResult" class="view_result"></div>
       </form>
     </section>
     <section class="container section_decrypt">
@@ -44,8 +45,8 @@
           <label class="input-group-text" for="uploadPrivateKey">Upload a private-key</label>
           <input type="file" class="form-control" id="uploadPrivateKey">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <div id="decryptResult" class="decrypt_result"></div>
+        <button id="decryptSubmit" type="submit" class="btn btn-primary" disabled>Submit</button>
+        <div id="decryptResult" class="view_result"></div>
       </form>
     </section>
   </main>

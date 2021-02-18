@@ -12,13 +12,6 @@
   border-radius: 4px;
 }
 
-.encrypt_result {
-  display: none;
-  margin-top: 0.5rem;
-  border-radius: 4px;
-  background-color: #e9ecef;
-}
-
 .section_decrypt {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
@@ -28,13 +21,10 @@
   border-radius: 4px;
 }
 
-.decrypt_result {
-  display: none;
+.view_result {
   margin-top: 0.5rem;
-}
-
-.containerVisible {
-  display: block;
+  border-radius: 4px;
+  background-color: #e9ecef;
 }
 
 .row_result {
